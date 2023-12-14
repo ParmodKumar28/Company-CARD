@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* Calling Animation Here when page loads */
+    animation: fade-in 1.5s ease-in-out;
+}
+
+
+/* Variables */
+:root{
+    --main-color: black;
+    --secondary-color: rgb(76, 75, 75);
+    --blue-color: #3f73f8;
+    --white:white;
+}
+
+/* Section Card */
+#card{
+    height: auto;
+    margin: 2rem;
+    padding: 1.2rem;
+    border: 1px solid rgb(227, 219, 219);
+    box-shadow: 0 2px 8px lightgrey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+/* Section Card Ends */
+
+
+/* Classes */
+.logo{
+    height: 2rem;
+}
+
+.social-icon{
+    margin-left: 1.2rem;
+}
+
+
+/* Main Section */
+main{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Article Section */
+article{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+article h1{
+    line-height: 60px;
+}
+
+
+/* Join Section */
+#join-section p{
+    color: var(--secondary-color);
+}
+
+#join-section a{
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+/* Join Button */
+#join-now-button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--blue-color);
+    height: 2.6rem;
+    width: 50%;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* Button animations */
+#join-now-button:hover{
+    background-color: green;
+    transition: transform 0.3s ease-in-out;
+}
+#join-now-button:hover {
+    transform: scale(1.1);
+}
+
+/* Main Section Ends */
+
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    color: var(--secondary-color);
+    line-height: 1.8rem;
+}
+
+#footer-right{
+    text-align: end;
+}
+/* Footer Ends */
+
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #footer-right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    article h1 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+}
+
+
+/* Page Load Animation */
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
